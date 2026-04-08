@@ -35,7 +35,8 @@ def executar():
             else:
                 print("\n--- Seus gastos ---")
                 for g in gastos:
-                    print(f"[{g['id']}] {g['descricao']} - R$ {g['valor']:.2f} ({g['categoria']})")
+                    linha = f"[{g['id']}] {g['descricao']} - R$ {g['valor']:.2f}"
+                    print(f"{linha} ({g['categoria']})")
 
         elif opcao == "3":
             total = total_gastos()
